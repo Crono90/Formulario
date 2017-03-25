@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="giovanni.itt.tarea2_formulario.Formulario">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewFormulario"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="FORMULARIO"
+        android:textSize="@dimen/textViewFormulario"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText android:id="@+id/txtNombre"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Nnmbre"
+        android:inputType="text" />
+
+
+    <EditText android:id="@+id/txtUserDireccion"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Direccion"
+        android:inputType="text" />
+
+    <EditText android:id="@+id/txtTelefono"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Telefono"
+        android:inputType="text" />
+
+
+
+</LinearLayout>
