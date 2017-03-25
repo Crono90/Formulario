@@ -34,13 +34,23 @@
         android:layout_width="fill_parent"
         android:hint="Telefono"
         android:inputType="text" />
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Nacimiento"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+
+
 
     <DatePicker
         android:id="@+id/simpleDatePicker"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:datePickerMode="spinner"/>
-
+        android:layout_height="295dp"
+        android:datePickerMode="spinner"
+        android:paddingBottom="50dp"/>
 
 
 </LinearLayout>
