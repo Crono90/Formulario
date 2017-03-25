@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="giovanni.itt.tarea2_formulario.Formulario">
+    tools:context="giovanni.itt.tarea2_formulario.Formulario"
+    android:weightSum="1"
+    android:background="@android:color/darker_gray">
 
     <TextView
         android:id="@+id/textFormulario"
@@ -14,6 +16,7 @@
         android:textSize="@dimen/textViewFormulario"
         android:textStyle="bold"
         android:gravity="center"
+
         />
 
     <EditText android:id="@+id/txtNombre"
@@ -21,7 +24,6 @@
         android:layout_width="match_parent"
         android:hint="Nombre"
         android:inputType="text" />
-
 
     <EditText android:id="@+id/txtUserDireccion"
         android:layout_height="wrap_content"
@@ -34,6 +36,7 @@
         android:layout_width="fill_parent"
         android:hint="Telefono"
         android:inputType="text" />
+
     <TextView
         android:id="@+id/textFecha"
         android:layout_width="match_parent"
@@ -41,16 +44,30 @@
         android:text="Fecha Nacimiento"
         android:textSize="17dp"
         android:textStyle="bold"/>
-
-
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <DatePicker
         android:id="@+id/simpleDatePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="295dp"
+        android:layout_width="443dp"
+        android:layout_height="315dp"
         android:datePickerMode="spinner"
-        android:paddingBottom="50dp"/>
+        android:layout_weight="0.22" />
 
+
+    <Button
+        android:id="@+id/ButtonEnviar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Enviar" />
+
+
+</LinearLayout>
 
 </LinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textViewFormulario">20dp</dimen>
+    <dimen name="textViewFormulario">25dp</dimen>
 
 </resources>
