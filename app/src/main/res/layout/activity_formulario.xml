@@ -19,7 +19,7 @@
     <EditText android:id="@+id/txtNombre"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="Nnmbre"
+        android:hint="Nombre"
         android:inputType="text" />
 
 
@@ -34,6 +34,12 @@
         android:layout_width="fill_parent"
         android:hint="Telefono"
         android:inputType="text" />
+
+    <DatePicker
+        android:id="@+id/simpleDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"/>
 
 
 
